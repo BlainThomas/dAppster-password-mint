@@ -1,0 +1,43 @@
+
+/* Lato import */
+@import url('https://use.typekit.net/jup0ykg.css');
+/* Poppins import */
+@import url('https://use.typekit.net/rgp2pgs.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+}
+
+:root {
+  --ease: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+body, body * {
+  color: inherit;
+}
+
+.remix-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.side-navbar{
+  z-index: 1;
+}
