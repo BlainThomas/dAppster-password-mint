@@ -59,7 +59,7 @@ export const Navbar = ({ brand }) => {
         />
         <div className='flex justify-between'>
           <a
-            href='https://faucet.polygon.technology/'
+            href='https://mumbaifaucet.com/'
             target="_blank"
             rel="noopener noreferrer"
             style={{ backgroundColor: brand.buttonColor, color: brand.fontColor }}
