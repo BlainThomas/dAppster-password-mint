@@ -51,7 +51,9 @@ contract MyToken is ERC721, ERC721Pausable, Ownable {
 
     // Override the safeMint function to include password verification
     function safeMint(uint256 tokenId, string memory password) public {
-        require(keccak256(abi.encodePacked(password)) == _tokenPasswords[tokenId], "Invalid password");
+        if(keccak256(abi.encodePacked(_tokenPasswords[tokenId])) != keccak256(abi.encodePacked(password))){
+            return;
+        }
         _safeMint(msg.sender, tokenId);
         // Clear the password hash after minting to prevent re-use
         delete _tokenPasswords[tokenId];
