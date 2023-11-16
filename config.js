@@ -16,7 +16,7 @@ export const defualtBrand = {
   logoWithText: banner.src,
   borderRadius: 20,
   mintContract: {
-    address: '0x6396180a17f780Dd53583e0EA6eE7008F73f27Bf',
+    address: '0x299827509b2ddA870638d7808BB498fe8183C102',
     abi: MintContract.abi
   },
   erc20Contracts: [],
